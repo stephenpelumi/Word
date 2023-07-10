@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/index.css">
+  </head>
+  <body>
+
+    <!-- The header -->
+    <header>
+      <select onchange="changeFont(this.value)" class="fonts_type" name="Fonts" placeholder="Normal" id="fonts">
+        <option class="normal" value="Normal">Normal</option>
+        <option class="heading1" value="Arial">Arial</option>
+        <option class="heading2"  value="sans-serif">sans-serif</option>
+        <option class="normal2"  value="Calibri">Calibri</option>
+        <option class="normal2"  value="Gill Sans">Gill Sans</option>
+      </select>
+
+      <div class="left_header">
+        <img onclick="toggleBold()" class="bold" src="./styles/assets /img/icons8-b-48.png" alt="" />
+        <img onclick="toggleItalic() " class="italic" src="./styles/assets /img/icons8-italic-25.png" alt="" />
+        <img onclick="toggleUnderline()" class="underline" src="./styles/assets /img/icons8-underline-24.png" alt="" />
+      </div>
+
+      <div class="right_header">
+        <img onclick="insertImage()" class="picture" src="./styles/assets /img/icons8-img-24.png" alt="" />
+        <img onclick="changeBackgroundColor()" class="backgroundline" src="./styles/assets /img/code_icon-icons.com_73620.png" alt="" />
+      </div>
+    </header>
+    <!-- the header ends here -->
+
+    <!-- the main which is the textarea starts here -->
+    <main>
+      <textarea class="textarea" name="" id="" cols="30" rows="10"></textarea>
+    </main>
+    <!-- The textarea ends here -->
+    <script src="./styles/index.js"></script> 
+  </body>
+</html>
